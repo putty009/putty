@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../static/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            background-size: 100% 100%;
+        }
+
+        /*css初始化*/
+        body,div,ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,input{
+            margin:0;
+            padding: 0;
+        }
+        img{
+            border: 0 none;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        input{
+            border: 0 none;
+            outline-style: none;
+        }
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+        .pic {
+            width: 100%;
+            height: 100%;
+            background-image: url("../static/images/application-blur-business-270238.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*background-size: 100%  100%;*/
+        }
+        .pnav {
+            background-color: #DEEBEB;
+        }
+        .left-con {
+        }
+        .right-con {
+            margin-top: 80px;
+            height: 600px;
+        }
+        .input-sign-up {
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+            color: rgba(0,0,0, 0.8);
+            height: 42px;
+            width: 100%;
+            float: left;
+
+            color: #555;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+            -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        }
+        .button-sign-up {
+            width: 100%;
+            height: 42px;
+            border-radius: 3px;
+            border: none;
+            color: white;
+            float: left;
+            margin-left: -25px;
+        }
+
+        .danger {
+            background-color: #ec1c24;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+<body>
+<h1>你好，世界！</h1>
+<div class="container pic">
+    <nav class="navbar navbar-default pnav">
+        <div class="container-fliud">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar">
+                    <span class="sr-only">Toggle</span>
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <a href="index.php" class="navbar-brand logo">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="mob-menu">
+                    <div class="mob-lang-wrapper visible-xs visible-sm">
+                        <a href="javascript:void(0)" class="active">English</a>
+                        <span>/</span>
+                        <a href="/cn/index.php">中文</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="mob-symbol">
+                            <a href="index.php" class="logo-symbol">
+                                <img src="/img/b-symbol.svg" alt="Main Logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="products " href="#">Products</a>
+                        </li>
+                        <li>
+                            <a class="" href="moments.php">Moments</a>
+                        </li>
+                        <li>
+                            <a class="" href="company.php">Company</a>
+                        </li>
+                        <li>
+                            <a class="" href="careers.php">Careers</a>
+                        </li>
+                    </ul>
+                    <div class="right-nav">
+                        <a href="experience.php#byton-app" class="sign-up-btn reserve box foo" data-toggle="collapse" data-target="#navbar">Keep in touch</a>
+                        <a href="reserve.php" class="reserve box foo">Reserve your BYTON</a>
+                    </div>
+                </div>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!--/ .container-fluid -->
+    </nav>
+
+    <div class="row main">
+        <div class="left-con col-lg-8 col-md-6 col-sm-4 hidden-xs"></div>
+        <div class="right-con col-lg-4 col-md-6 col-sm-8">
+            <h1>
+                <strong>Reach More Customers</strong><br>with Call Center Software
+            </h1>
+            <p>CrazyCall is a user-friendly call center software which makes it easy to make and take calls from clients, analyze them and optimize call campaigns in real-time</p>
+            <form id="search">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                        <input id="email-form1" class="input-sign-up" name="email" required="" type="email" value="" placeholder="Your business email" />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <button id="button" class="button-sign-up danger" type="submit" value="submit" onclick="send(this,event)" source="WWWTRIAL">SEARCH</button>
+                    </div>
+                </div>
+                <div id="error-form1" class="error-mail" style="display: none;">This field is required</div>
+            </form>
+            <div class="word">
+                <!--<div id="div1" th:fragment="div1">
+                    <div th:if="${aa} ne null">
+                        <ul th:each="a : ${aa}">
+                            <li th:text="${a}"></li>
+                        </ul>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<img src="../static/images/application-blur-business-270238.jpg">-->
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="../static/js/jquery-1.11.3.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src=".."></script>
+</body>
+</html>

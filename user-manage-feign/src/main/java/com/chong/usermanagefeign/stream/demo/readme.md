@@ -1,0 +1,1 @@
+only a spring cloud stream demo
